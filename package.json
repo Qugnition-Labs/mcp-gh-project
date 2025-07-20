@@ -1,0 +1,22 @@
+{
+  "name": "mcp-gh-project",
+  "version": "0.1.0",
+  "description": "MCP server for GitHub project management",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "python -m build",
+    "dev": "python -m mcp_gh_project",
+    "start": "python -m mcp_gh_project",
+    "lint": "ruff check src/ test_*.py",
+    "lint:fix": "ruff check --fix src/ test_*.py",
+    "format": "ruff format src/ test_*.py",
+    "format:check": "ruff format --check src/ test_*.py",
+    "typecheck": "mypy src/",
+    "test": "python test_server.py && python simple_test.py"
+  },
+  "keywords": ["mcp", "github", "project-management"],
+  "author": "Qugnition Labs",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {}
+}
