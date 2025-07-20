@@ -36,7 +36,11 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 ### 3. Install Dependencies
 
 ```bash
+# Install the package
 pip install -e .
+
+# Install development dependencies (optional, for building/testing)
+pip install -e ".[dev]"
 ```
 
 ### 4. GitHub Authentication
@@ -265,8 +269,8 @@ Once configured with your AI tool, you can use natural language commands:
 npm run test
 
 # Or run individually
-python test_server.py
-python simple_test.py
+python tests/test_server.py
+python tests/test_compile.py
 ```
 
 ### Linting and Formatting
@@ -288,6 +292,9 @@ npm run typecheck
 ### Building
 
 ```bash
+# Install development dependencies first
+pip install -e ".[dev]"
+
 # Build distribution packages
 npm run build
 ```

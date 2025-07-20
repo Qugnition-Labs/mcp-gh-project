@@ -12,7 +12,9 @@
     "format": "ruff format src/ test_*.py",
     "format:check": "ruff format --check src/ test_*.py",
     "typecheck": "mypy src/",
-    "test": "python test_server.py && python simple_test.py"
+    "test": "PYTHONPATH=./src python tests/test_server.py && PYTHONPATH=./src python tests/test_compile.py",
+    "test:protocol": "PYTHONPATH=./src python tests/test_mcp_protocol.py",
+    "test:all": "npm run test && npm run test:protocol"
   },
   "keywords": ["mcp", "github", "project-management"],
   "author": "Qugnition Labs",
