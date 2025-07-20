@@ -3,7 +3,7 @@
 A Model Context Protocol (MCP) server for managing GitHub project items (cards). This server enables AI assistants to interact with GitHub Projects v2, allowing you to create, read, update, and delete project items directly from your AI conversations.
 
 ## 🤖 Demo
-![Animation](https://github.com/user-attachments/assets/fe292953-f813-488a-8348-7f49390db085)
+![demo-short](https://github.com/user-attachments/assets/740126be-7d85-4b25-ae76-2bc42c9e9a84)
 
 ## 🚀 Features
 
