@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "mcp-gh-project": {
+      "command": "python",
+      "args": ["-m", "mcp_gh_project"],
+      "cwd": "/path/to/mcp-gh-project",
+      "env": {
+        "GITHUB_TOKEN": "your_github_token_here"
+      }
+    }
+  }
+}
